@@ -1,52 +1,62 @@
-// _variables.scss
+$breakpoints:(
 
-// Мінімальна та максимальна ширина області перегляду з макета
-$min-w: 375px;
-$max-w: 1440px;
+'sm':375px,
+'md':768px,
+'lg':1200px,
+'xl':1440px,
+'xxl':1920px,
+);
 
-// Відступи
-$spacer-base: 30px;
+$colors:(
+"light":#FFFFFF,
+"light-primary":#FAFAFB,
+"light-secondary":#B5B5BE,
+"light-tertiary":#92929D,
 
-$spacer-xxs: 0.25 * $spacer-base;
-$spacer-xs: 0.5 * $spacer-base;
-$spacer-s: 0.75 * $spacer-base;
-$spacer-m: $spacer-base;
-$spacer-l: 1.5 * $spacer-base;
-$spacer-xl: 2 * $spacer-base;
-$spacer-xxl: 2.25 * $spacer-base;
+"dark":#000000,
+"dark-primary":#13131A,
+"dark-secondary":#1C1C24,
+"dark-tertiary":#292932,
+"accent-primary":#F07F2E,
+"accent-secondary":#F15C27,
+"accent-tertiary":#D14A00,
+"danger":#FC5A5A,
+"success":#82C43C,
+"warning":#A461D8,
+"info":#4E75FF,
+"transparent":transparent,
+"current":currentColor,
+);
 
-// Розміри шрифтів
-$fs-base: 16px;
+$paddings:(
+   'sm':    4px,
+'md':   8px,
+'lg':   16px,
+'xl':   20px,
+);
 
-$fs-xxs: 11px;
-$fs-xs: 12px;
-$fs-s: 14px;
-$fs-m: $fs-base;
-$fs-l: 22px;
-$fs-xl: 24px;
-$fs-xxl: 26px;
+$spacers:(
+    'sm':    24px,
+    'md':   32px,
+    'lg':   36px,
+    'xl':   68px,
+);
 
-// Палітра кольорів
-// Base
-$primary: #F07F2E;
-$success: #82C43C;
-$info: #4E75FF;
-$warning: #A461D8;
-$danger: #FC5A5A;
-$light: #92929D;
-$dark: #13131A;
-// Additional
-$gray: #B5B5BE;
-$bg-secondary-1: #1C1C24;
-$bg-secondary-2: #292932;
-$text-primary-1: #F15C27;
-$text-primary-2: #D14A00;
-$white: #fff;
-$black: #000;
+$main-font:"Montserrat";
 
-// Брейкпоінти
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+$font-weights:(
+    'Regular':400,
+    'Medium':500,
+    'Semibold':600,
+    'Bold':700,
+);
+$font-size:(
+    'sm':    14px,
+    'md':   16px,
+    'lg':   20px,
+    'xl':   24px,
+);
+$easings:(
+    'fast':300ms ease,
+    'slow':600ms ease,
+)
