@@ -1,0 +1,78 @@
+
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
+.companies {
+  
+
+}
+.list-companies {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; // Рівномірно розподіляє елементи
+    gap: 20px;
+    padding: 0; // Прибрати зайві відступи
+
+    
+}
+
+.item-companies {
+    padding: 24px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 343px;
+    height: 196px;
+    background-color: fn.get-color("dark-tertiary");
+
+    @include mx.mq('md') {
+        // width: calc(33.333% - 20px); // 3 елементи в рядок
+        width: 359px;
+    }
+
+    @include mx.mq('lg') {
+        width: calc(33.333% - 20px); // 3 елементи в рядок
+        max-width: 359px;
+    }
+}
+
+
+
+.name-company {
+    @extend %main-text;
+    color:fn.get-color("light");
+    margin-bottom: 18px;
+}
+.place-icon-company {
+    fill:fn.get-color('success');
+}
+.place-company {
+    @extend %accent-text;
+
+}
+.icon-company {
+    stroke:fn.get-color("light");
+}
+.btn-company {
+    margin-top: 32px;
+    @extend %details-accent;
+    color:fn.get-color("accent-primary");
+    border-color:fn.get-color("accent-primary");
+    background-color: transparent;
+    border-radius:12px ;
+    border:1px solid;
+    padding: 8px 12px 8px 12px;
+}
+.general-company {
+    display:flex;
+    justify-content: space-between;
+
+}
+.cont-place-name {
+}
+.cont-place {
+    display:flex;
+    gap:11px;
+  align-items: center;
+}
