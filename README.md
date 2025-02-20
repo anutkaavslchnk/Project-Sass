@@ -11,7 +11,7 @@ Cat CRM
 
 2. Install dependencies
    ```sh
-npm install
+   npm install
 
 3. Compile SCSS to CSS
    ```sh
