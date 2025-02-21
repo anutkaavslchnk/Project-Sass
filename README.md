@@ -1,8 +1,13 @@
 # Sass project 
 Cat CRM 
 
+
+
+
 ## Technologies
 - **Frontend:** HTML, SCSS  
+
+
 
 ## Getting Started
 1. Clone the repository  
@@ -20,3 +25,7 @@ Cat CRM
 4. Run the project
    ```sh
    npm run dev
+
+
+
+   
