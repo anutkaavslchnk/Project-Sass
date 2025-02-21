@@ -154,14 +154,14 @@ meter {
   letter-spacing: 0.025em;
 }
 
-body {
+.name-company, body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
-.reports-title span, .board-caption, .co-workers-title span, .co-workers-table caption span, .tasks-title span {
+.place-company, .reports-title span, .board-caption, .co-workers-title span, .co-workers-table caption span, .tasks-title span {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -175,7 +175,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-.badge-danger, .badge-warning, .badge-success, .co-workers-table thead th, .co-workers-position, .co-workers-accept {
+.btn-company, .badge-danger, .badge-warning, .badge-success, .co-workers-table thead th, .co-workers-position, .co-workers-accept {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.42;
@@ -966,6 +966,59 @@ summary {
 [data-status=down] .reports-icon[value] {
   opacity: 1;
 }
+
+.list-companies {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+}
+
+.item-companies {
+  padding: 24px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 343px;
+  height: 196px;
+  background-color: #292932;
+}
+
+.name-company {
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+.place-icon-company {
+  fill: #82C43C;
+}
+
+.icon-company {
+  stroke: #FFFFFF;
+}
+
+.btn-company {
+  margin-top: 32px;
+  color: #F07F2E;
+  border-color: #F07F2E;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid;
+  padding: 8px 12px 8px 12px;
+}
+
+.general-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-place {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
 @media only screen and (min-width: 768px) {
   .main {
     gap: 36px;
@@ -979,7 +1032,11 @@ summary {
   .reports-item {
     gap: 32px;
   }
+  .item-companies {
+    width: 359px;
+  }
 }
+
 @media only screen and (min-width: 1200px) {
   .reports, .board-item, .tasks {
     padding: 24px;
@@ -1021,7 +1078,12 @@ summary {
   .co-workers-container {
     margin-right: -14px;
   }
+  .item-companies {
+    width: calc(33.333% - 20px);
+    max-width: 359px;
+  }
 }
+
 @media only screen and (min-width: 1440px) {
   .co-workers-table thead {
     background-color: #1C1C24;
@@ -1047,6 +1109,7 @@ summary {
     background-color: #1C1C24;
   }
 }
+
 @media only screen and (max-width: 1199.98px) {
   .sidebar {
     position: fixed;
@@ -1088,11 +1151,13 @@ summary {
     transition-delay: 400ms;
   }
 }
+
 @media only screen and (max-width: 767.98px) {
   .co-workers-table {
     display: none;
   }
 }
+
 @media (hover: hover) {
   .btn--primary:hover, .btn--primary:focus {
     border-radius: 12px;
